@@ -1,7 +1,8 @@
-import { Config } from '@stencil/core';
+import {Config} from '@stencil/core';
 
 export const config: Config = {
   namespace: 'e2e-bug',
+  globalScript: 'src/global/global-script.ts',
   outputTargets: [
     {
       type: 'dist',
@@ -19,6 +20,6 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
 };
